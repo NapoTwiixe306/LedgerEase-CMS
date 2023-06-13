@@ -1,4 +1,12 @@
 @import "./abstracts/Mixins.scss";
 
+/*navbar*/
+@import "./components/navbar.scss";
+
 /*Pages*/
 @import "./pages/Home.scss";
+@import "./pages/Create.scss";
+@import "./pages/Docs.scss";
+
+/*Footer*/
+@import "./components/footer.scss";

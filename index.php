@@ -6,6 +6,7 @@
 </head>
 <body>
     <?php
+    include './app/views/components/navbar.php';
     // Inclure le contenu de la page d'accueil
     include './app/views/site/Home.php';
 ?>
