@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>Mon CMS Crypto - Accueil</title>
-    <!-- <link rel="stylesheet" href="public/css/style.css"> -->
+    <link rel="stylesheet" href="public/css/style.css">
 </head>
 <body>
     <?php
