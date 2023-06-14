@@ -9,6 +9,9 @@
     include './app/views/components/navbar.php';
     // Inclure le contenu de la page d'accueil
     include './app/views/site/Home.php';
+    // Inclure le contenu du Footer
+    include './app/views/components/footer.php';
+
 ?>
 </body>
 </html>

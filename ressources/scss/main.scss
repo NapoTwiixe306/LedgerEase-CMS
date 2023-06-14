@@ -1,8 +1,13 @@
 @import "./abstracts/Mixins.scss";
+@import "./abstracts/Variables.scss";
+
+body{
+    background-color: $BgColor;
+}
 
 /*navbar*/
-@import "./components/navbar.scss";
-
+@import "./components/navbar.scss";  
+  
 /*Pages*/
 @import "./pages/Home.scss";
 @import "./pages/Create.scss";

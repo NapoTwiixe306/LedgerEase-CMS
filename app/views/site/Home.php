@@ -11,6 +11,6 @@ $title = "LedgerEase-CMS";
     <title>Document</title>
 </head>
 <body>
-    
+    <h1 class="logo">HomePage</h1>
 </body>
 </html>
