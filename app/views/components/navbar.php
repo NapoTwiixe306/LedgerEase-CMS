@@ -1,5 +1,6 @@
 <?php 
   include './app/controllers/Variables.php';
+  include './app/config/config.php';
 ?>
 
 <nav class="header">
