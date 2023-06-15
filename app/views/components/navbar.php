@@ -1,5 +1,5 @@
 <?php 
-    $Title = "LedgerEase-CMS";
+  include './app/controllers/Variables.php';
 ?>
 
 <nav class="header">

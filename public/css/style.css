@@ -94,6 +94,13 @@ body.dark-mode .header__navigation li .header__navigation-link {
 }
 
 /*Pages*/
+.section, .section2, .section3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
 /*Footer*/
 
 /*# sourceMappingURL=style.css.map */

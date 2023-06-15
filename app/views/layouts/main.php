@@ -1,12 +1,12 @@
 <?php 
-    $title = "LedgerEase-CMS";
-    $content = './app/views/site/home.php';
+  include './app/controllers/Variables.php';
 ?>
+
 
 <!DOCTYPE html>
 <html>
 <head>
-    <title> <?php echo $title; ?></title>
+    <title> <?php echo $Title; ?></title>
     <link rel="stylesheet" href="../public/css/style.css">
     <script src="https://kit.fontawesome.com/b354d51934.js" crossorigin="anonymous"></script>
 </head>

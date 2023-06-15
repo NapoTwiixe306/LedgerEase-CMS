@@ -1,0 +1,6 @@
+@import "../abstracts/Mixins.scss";
+
+.section, .section2, .section3{
+    @include Center();
+    height: 100vh;
+}
