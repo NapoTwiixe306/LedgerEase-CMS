@@ -9,6 +9,6 @@
     <?php
    include './app/views/layouts/main.php'
 ?>
-<script src="./index.js"></script>
+
 </body>
 </html>

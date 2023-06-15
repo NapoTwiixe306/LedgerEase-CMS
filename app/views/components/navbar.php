@@ -1,7 +1,22 @@
-<?php 
-  include './app/controllers/Variables.php';
-  include './app/config/config.php';
+<?php
+include './app/controllers/Variables.php';
+include './app/config/config.php';
+
+$suggestion = '';
+
+if ($_SERVER['REQUEST_METHOD'] === 'GET' && isset($_GET['search'])) {
+    $searchTerm = $_GET['search'];
+
+    if ($searchTerm === 'Napo') {
+        echo '<script>console.log("oui fdp");</script>';
+    } elseif ($searchTerm === 'Docs') {
+        $suggestion = 'Suggestion : <a href="docs.php">Voir la page de documentation</a>';
+    } else {
+        echo '<script>console.log("non");</script>';
+    }
+}
 ?>
+
 
 <nav class="header">
     <!-- Logo Link -->
@@ -15,8 +30,11 @@
     </ul>
     <!-- SearchBar -->
     <div class="search-bar">
-        <input type="text" placeholder="Rechercher..." onkeydown="handleKeyPress(event)">
-        <button type="submit" onClick="handleSearch()"><i class="fas fa-paper-plane"></i></button>
+        <form method="get" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+            <input type="text" name="search" placeholder="Rechercher...">
+            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+        </form>
+        <?php echo $suggestion; ?> <!-- Affiche la suggestion ici -->
     </div>
     <!-- DarkMode Button -->
     <div class="dark-mode-toggle">
