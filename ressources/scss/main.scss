@@ -3,6 +3,12 @@
 
 body{
     background-color: $BgColor;
+    color: black;
+}
+
+body.dark-mode{
+    background-color: #232326;
+    color: white
 }
 
 /*navbar*/

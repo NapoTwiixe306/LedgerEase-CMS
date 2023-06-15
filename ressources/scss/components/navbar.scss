@@ -17,11 +17,14 @@
       color: $TxtColor;
       text-decoration: none;
       font-weight: 600;
-      transition: 0.3s;
-  
-      &:hover {
-        color: $FirstColor;
+      // transition: 0.3s;
+      body.dark-mode & {
+        color: white;
       }
+  
+      // &:hover {
+      //   color: $FirstColor;
+      // }
     }
   
     &__navigation {
@@ -43,7 +46,10 @@
           font-weight: 600;
           font-size: 1.8em;
           letter-spacing: 1px;
-          transition: 0.3s;
+          // transition: 0.3s;
+          body.dark-mode & {
+            color: white;
+          }
   
           &:hover {
             color: $FirstColor;
@@ -70,8 +76,7 @@
       padding: 5px 10px;
       border: none;
       border-radius: 3px;
-      // background-color: $FirstColor;
-      color: $TxtColor;
+
       font-size: 1em;
       cursor: pointer;
     }
@@ -84,12 +89,12 @@
 
     label {
       font-size: 1em;
-      color: $TxtColor;
+      // color: $TxtColor;
       cursor: pointer;
 
-      &:hover {
-        color: $FirstColor;
-      }
+      // &:hover {
+      //   color: $FirstColor;
+      // }
     }
   }
 }
