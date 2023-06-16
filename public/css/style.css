@@ -94,13 +94,83 @@ body.dark-mode .header__navigation li .header__navigation-link {
 }
 
 /*Pages*/
-.section, .section2, .section3 {
+.btn, .section3 .card a {
+  text-decoration: none;
+  font-size: 25px;
+  color: rgb(83, 75, 75);
+  border: 2px solid rgb(211, 201, 201);
+  padding: 15px 30px;
+  border-radius: 19px;
+  position: relative;
+  top: 50px;
+  transition: 0.3s;
+}
+.btn:hover, .section3 .card a:hover {
+  color: white;
+  background-color: orange;
+  border: none;
+}
+
+.section {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
 }
 
+.section2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: violet;
+  height: 100vh;
+}
+
+.section3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.section3 .card-container {
+  display: grid;
+  width: 90%;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.section3 .card {
+  background-color: #f0f0f0;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.452);
+  border-radius: 19px;
+  text-align: center;
+  height: 500px;
+}
+.section3 .card img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+.section3 .card h3 {
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+.section3 .card p {
+  font-size: 20px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  color: #888;
+}
+.section3 .card .price {
+  margin-top: 50px;
+  color: rgb(101, 99, 99);
+  text-transform: uppercase;
+}
+
 /*Footer*/
+footer {
+  text-align: center;
+}
 
 /*# sourceMappingURL=style.css.map */
