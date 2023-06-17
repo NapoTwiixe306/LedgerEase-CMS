@@ -20,7 +20,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET' && isset($_GET['search'])) {
 
 <nav class="header">
     <!-- Logo Link -->
-    <a href="#Home" class="header__logo"><?php echo $Title?></a>
+    <a href="?page=home" class="header__logo"><?php echo $Title?></a>
     <!-- Nav Link Section -->
     <ul class="header__navigation">
         <li class="header__navigation-item"><a href="?page=home" rel="noopener noreferrer" class="header__navigation-link">Home</a></li>
