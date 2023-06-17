@@ -21,7 +21,7 @@
         } elseif($page === 'docs') {
             include './app/views/site/Docs.php';
         } elseif($page === 'login') {
-            include './app/views/site/Login.php';
+            include './app/views/Auth/Login.php';
         } else {
             include './app/views/site/Home.php';
         }

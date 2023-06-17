@@ -138,6 +138,9 @@ body.dark-mode .header__navigation li .header__navigation-link {
   font-size: 35px;
   margin-bottom: 10px;
 }
+body.dark-mode .section3 .card h3 {
+  color: rgb(0, 0, 0);
+}
 .section3 .card p {
   font-size: 20px;
   width: 50%;
