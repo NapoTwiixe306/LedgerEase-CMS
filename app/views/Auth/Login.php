@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="connexion.php" method="post">
+    <form action="./app/views/Auth/connexion.php" method="post" class="form-login">
         <h2 class="text-center">Connexion</h2>       
         <div class="form-group">
             <input type="email" name="email" class="form-control" placeholder="Email" required="required" autocomplete="off">
