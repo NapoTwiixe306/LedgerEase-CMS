@@ -155,9 +155,17 @@ body.dark-mode .section3 .card h3 {
 }
 
 /*Login/Register*/
+.form-login {
+  border: 2px solid red;
+  width: 350px;
+  height: 500px;
+}
+
 /*Footer*/
 footer {
   text-align: center;
 }
+
+/*mobile*/
 
 /*# sourceMappingURL=style.css.map */

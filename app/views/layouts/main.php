@@ -8,6 +8,7 @@
 <head>
     <title> <?php echo $Title; ?></title>
     <link rel="stylesheet" href="../public/css/style.css">
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
     <script src="https://kit.fontawesome.com/b354d51934.js" crossorigin="anonymous"></script>
 </head>
 <body>

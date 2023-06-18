@@ -22,5 +22,11 @@ body.dark-mode{
 /*Login/Register*/
 @import "./pages/Login.scss";
 
+
 /*Footer*/
 @import "./components/footer.scss";
+
+
+/*mobile*/
+@import "./Mobile/480px.scss";
+@import "./Mobile/768px.scss";
