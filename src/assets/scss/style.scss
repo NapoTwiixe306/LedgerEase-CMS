@@ -1,0 +1,17 @@
+body{
+    background-color: #232f45;
+    color: #fff;
+    width: 100%;
+}
+
+/*Base*/
+@import "./Base/Reset.scss";
+@import "./Base/Variables.scss";
+@import "./Base/Button.scss";
+@import "./Base/Typo.scss";
+
+/*Components*/
+@import "./Components/Navbar.scss";
+@import "./Components/Footer.scss";
+
+@import "./Pages/HomePage.scss";
