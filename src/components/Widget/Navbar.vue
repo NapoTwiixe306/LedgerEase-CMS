@@ -4,9 +4,9 @@
     <a href="#" class="header__logo">LedgerEase-CMS</a>
     <!-- Nav Link Section -->
     <ul class="header__navigation">
-      <li class="header__navigation-item"><a href="#" rel="noopener noreferrer" class="header__navigation-link">Home</a></li>
+      <li class="header__navigation-item"><router-link to="/" class="header__navigation-link">Home</router-link></li>
       <li class="header__navigation-item"><a href="#" rel="noopener noreferrer" class="header__navigation-link">Create</a></li>
-      <li class="header__navigation-item"><a href="#" rel="noopener noreferrer" class="header__navigation-link">Docs</a></li>
+      <li class="header__navigation-item"><router-link to="/docs" class="header__navigation-link">Docs</router-link></li>
       <li class="header__navigation-item"><a href="#" rel="noopener noreferrer" class="header__navigation-link">Login</a></li>
     </ul>
     <!-- SearchBar -->

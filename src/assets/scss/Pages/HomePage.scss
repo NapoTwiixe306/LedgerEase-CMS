@@ -1,10 +1,66 @@
-.name{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+@import "../Base/Mixin.scss";
 
-    h1{
-        color: red;
+.section{
+    @include Center();
+    height: 100vh;
+}
+
+.section2{
+    @include Center();
+    background-color: violet;
+    height: 100vh
+}
+
+.section3{
+    @include Center();
+
+    height: 100vh;
+    .card-container {
+        display: grid;
+        width: 90%;
+        
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        
     }
-  }
+    
+        .card {
+        background-color: #f0f0f0;
+        padding: 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.452);
+        border-radius: 19px;
+        text-align: center;
+        height: 500px;
+        
+        img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+        }
+        
+        h3 {
+        font-size: 35px;
+        color: #888;
+        margin-bottom: 10px;
+        body.dark-mode & {
+            color: rgb(0, 0, 0);
+          }
+        }
+        
+        p {
+        font-size: 20px;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        color: #888;
+        }
+
+        // a{@extend .btn;}
+        
+        .price{
+            margin-top: 20px;
+            color: rgb(101, 99, 99);
+            text-transform: uppercase;
+        }
+    }
+}

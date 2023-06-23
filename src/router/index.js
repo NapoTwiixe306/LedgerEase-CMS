@@ -7,6 +7,11 @@ const routes = [
         name: 'home',
         component: AccPage
     },
+    {
+        path: '/docs',
+        name: 'docs',
+        component: () => import('../components/DocsPage.vue')
+    }
 
 ]
 
