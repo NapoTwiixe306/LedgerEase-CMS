@@ -1,11 +1,18 @@
 <template>
   <Navbar/>
-  <body>
     <section class="section">
-        <h1>Section 1</h1>
+        <div class="home">
+            <h1>Bienvenue sur LedgerEase, le seul CMS qui propose des fonctionnalités crypto/blockchain, en étant basé sur ces principes.</h1>
+            <p>43 % des sites Web reposent sur WordPress. WordPress est utilisé par davantage de blogueurs, PME et sociétés du classement Fortune 500 
+                que toutes les autres options réunies. Rejoignez les millions de personnes qui utilisent WordPress.com
+            </p>
+            <router-link to="/create" class="home-btn">Commencer</router-link>
+        </div>
+        <img src="./img/synthese.jpg" alt="">
     </section>
     <section class="section2">
         <h1>Section 2</h1>
+        
     </section>
     <section class="section3">
         <div class="card-container">
@@ -38,7 +45,7 @@
             </div>
         </div>
     </section>
-</body>
+
   <Footer/>
 </template>
 

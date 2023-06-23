@@ -1,14 +1,56 @@
 @import "../Base/Mixin.scss";
 
-.section{
+.section {
     @include Center();
+    flex-direction: column;
     height: 100vh;
-}
+    
+  
+    .home {
+      @include Center();
+      flex-direction: column;
+      margin-top: 450px;
+      width: 50%;
+  
+      h1 {
+        font-size: 50px;
+        font-weight: 500;
+      }
+  
+      p {
+        margin-top: 25px;
+        font-size: 22px;
+      }
+  
+      .home-btn {
+        text-decoration: none;
+        align-self: flex-start;
+        color: white;
+        margin-right: 15px;
+        margin-top: 15px;
+        padding: 15px 30px;
+        background-color: #445d8b;
+        border-radius: 10px;
+        
+      }
+    }
+  
+    img {
+      margin-top: 50px;
+      width: 65%;
+      border-radius: 15px;
+    }
+  }
+  
 
 .section2{
     @include Center();
-    background-color: violet;
-    height: 100vh
+    background-color: #445d8b;
+    // flex-direction: column;
+    height: 100vh;
+    padding: 20px;
+    min-width: 100%;
+
 }
 
 .section3{
