@@ -12,7 +12,7 @@
     </ul>
     <!-- SearchBar -->
     <div class="search-bar">
-      <form method="get" action="">
+      <form method="" action="">
         <input type="text" name="search" placeholder="Rechercher...">
         <button type="submit">Search</button>
       </form>

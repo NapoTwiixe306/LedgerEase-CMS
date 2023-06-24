@@ -1,4 +1,5 @@
 @import "../Theme/DarkMode.scss";
+@import "../Base/Variables.scss";
 
 .header {
     position: relative;
@@ -20,6 +21,9 @@
       // transition: 0.3s;
       body.dark-mode & {
         color: rgb(0, 0, 0);
+      }
+      &:hover{
+        color: rgb(196, 195, 250);
       }
     }
   
@@ -47,7 +51,7 @@
           }
   
           &:hover {
-            color: red;
+            color: rgb(196, 195, 250);
           }
       }
     }
