@@ -58,6 +58,7 @@ const submitForm = () => {
     .then(response => {
       if (response.ok) {
         console.log('Data saved successfully.');
+        alert("ok")
         // Perform any additional actions or navigate to a different page
       } else {
         console.error('Failed to save data.');

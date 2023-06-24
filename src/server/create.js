@@ -8,6 +8,8 @@ const port = 3000;
 app.use(express.json());
 app.use(cors()); // Enable CORS for all routes
 
+const path = require('path');
+
 app.post('/api/formData', (req, res) => {
   const { websiteName, emailAddress } = req.body;
 
@@ -18,7 +20,10 @@ app.post('/api/formData', (req, res) => {
 
   const jsonData = JSON.stringify(formData, null, 2); // Add indentation for readability
 
-  fs.writeFile('formData.json', jsonData, 'utf8', (err) => {
+  const fileName = `${emailAddress}.json`; // Use email address as the file name
+  const filePath = path.join(__dirname, 'Users', fileName); // Construct the file path
+
+  fs.writeFile(filePath, jsonData, 'utf8', (err) => {
     if (err) {
       console.error(err);
       res.status(500).send('Une erreur est survenue lors de la sauvegarde des données.');
@@ -27,6 +32,7 @@ app.post('/api/formData', (req, res) => {
     }
   });
 });
+
 
 app.listen(port, () => {
   console.log(`Le serveur est en écoute sur le port ${port}`);
