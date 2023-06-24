@@ -25,6 +25,10 @@
       }
       span{
         color: rgb(150, 125, 16);
+        body.dark-mode & {
+            color: rgb(206, 173, 29);
+
+          }
       }
     }
   

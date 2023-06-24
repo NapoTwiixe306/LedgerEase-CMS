@@ -12,13 +12,13 @@
       <div class="container">
         <!-- code here -->
         <div class="card">
-            <form class="card-form">
+            <form class="card-form" @submit.prevent="submitForm">
                 <div class="input">
-                    <input type="text" class="input-field" required/>
+                  <input type="text" class="input-field" name="websiteName" v-model="websiteName" required/>
                     <label class="input-label">WebSite Name</label>
                 </div>
-                            <div class="input">
-                    <input type="text" class="input-field" required/>
+                <div class="input">
+                  <input type="text" class="input-field" name="emailAddress" v-model="emailAddress" required/>
                     <label class="input-label">Email Address</label>
                 </div>
                 <div class="action">
@@ -31,12 +31,40 @@
         </div>
     </div>
     </section> 
-    <!-- <Footer/>   -->
+    <Footer/>  
 </template>
 
 <script setup>
 import Navbar from './Widget/Navbar.vue';
-// import Footer from './Widget/Footer.vue';
+import Footer from './Widget/Footer.vue';
+import { ref } from 'vue';
 
+const websiteName = ref('');
+const emailAddress = ref('');
 
+const submitForm = () => {
+  const formData = {
+    websiteName: websiteName.value,
+    emailAddress: emailAddress.value
+  };
+
+  fetch('http://localhost:3000/api/formData', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(formData)
+  })
+    .then(response => {
+      if (response.ok) {
+        console.log('Data saved successfully.');
+        // Perform any additional actions or navigate to a different page
+      } else {
+        console.error('Failed to save data.');
+      }
+    })
+    .catch(error => {
+      console.error('An error occurred:', error);
+    });
+};
 </script>
