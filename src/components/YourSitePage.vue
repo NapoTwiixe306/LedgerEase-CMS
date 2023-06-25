@@ -20,6 +20,7 @@
       if (!this.isLoggedIn) {
         // Rediriger vers la page de connexion si l'utilisateur n'est pas connecté
         this.$router.push('/');
+        /* SYSTEM DE WISH FDP MODIFIE ÇA DESUITE*/
       }
     },
     methods: {
