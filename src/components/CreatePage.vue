@@ -38,6 +38,7 @@
 <script lang="js">
 import Navbar from './Widget/Navbar.vue';
 import Footer from './Widget/Footer.vue';
+import router from '../router/index'
 import axios from 'axios'
 export default {
   components: {
@@ -60,7 +61,7 @@ export default {
 
         localStorage.setItem('token', response.data.token); // stocker le token dans le localstorage
         console.log(response.data, "gg tu es log")
-        this.$router.push('/chat');
+        router.push('/yoursite');
       } catch (error) {
         console.log(error.response.data)
         alert('Nom utilisateur ou mdp incorrect')

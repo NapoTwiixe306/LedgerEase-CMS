@@ -38,6 +38,7 @@
 <script>
 import Navbar from './Widget/Navbar.vue';
 import axios from 'axios'
+import router from '../router/index'
 export default {
   components: {
     Navbar
@@ -57,8 +58,8 @@ export default {
         email: this.email,
         password: this.password
       });
-      console.log(response.data);
-      // Afficher un message de succès ou rediriger l'utilisateur vers une autre page
+      console.log(response)
+      router.push({path: '/create'})
     } catch (error) {
       console.log(error.response.data);
       // Afficher un message d'erreur
