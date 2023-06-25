@@ -1,0 +1,78 @@
+@import "../Base/Mixin.scss";
+
+
+
+.register{
+    @include Center();
+    height: 90vh;
+
+    .input{
+        display: flex;
+        flex-direction: column;
+        padding-top: 1.5rem;
+        .input-label{
+            color: #6d5deb;
+        }
+
+        .input-field{
+            padding: 12px;
+            border-radius: 5px;
+            border: none;
+        }
+    }
+
+    .action {
+        margin-top: 2rem;
+    }
+
+    .action-button {
+        font: inherit;
+        font-size: 1.25rem;
+        padding: 1em;
+        margin-top: -15px;
+        width: 100%;
+        font-weight: 500;
+        background-color: #6658d3;
+        border-radius: 6px;
+        border: 0;
+        transition: 0.3s;
+        &:focus {
+            outline: 0;
+        }
+        &:hover{
+            background-color: $BgButton;
+        }
+        .action-btn-text{
+            text-decoration: none;
+            color: #FFF;
+
+        }
+    }
+
+
+    .social-log{
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+        font-size: 30px;
+        a{
+            color: white;
+            padding: 1.5rem;
+            text-decoration: none;
+        }
+    }
+
+    .forgot{
+        margin-top: 10px;
+        a{
+            text-decoration: none;
+            color: #8a8888;
+        }
+    }
+
+    .vertical-bar {
+        margin-left: 35px;
+        border-left: 2px solid #8a8888;
+        height: 200px;
+      }
+} 

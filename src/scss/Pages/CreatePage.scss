@@ -120,4 +120,21 @@
             text-decoration: none;
         }
     }
+
+    .forgot{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 15px;
+        a{
+            text-decoration: none;
+            color: rgb(158, 152, 152);
+        }
+
+        .forgot_mdp{
+            color: rgb(158, 152, 152);
+
+        }
+    }
 }
