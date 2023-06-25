@@ -1,14 +1,13 @@
 const express = require('express');
 const fs = require('fs');
 const cors = require('cors');
+const path = require('path');
 
 const app = express();
 const port = 3000;
 
 app.use(express.json());
 app.use(cors()); // Enable CORS for all routes
-
-const path = require('path');
 
 app.post('/api/formData', (req, res) => {
   const { websiteName, emailAddress } = req.body;
@@ -26,13 +25,12 @@ app.post('/api/formData', (req, res) => {
   fs.writeFile(filePath, jsonData, 'utf8', (err) => {
     if (err) {
       console.error(err);
-      res.status(500).send('Une erreur est survenue lors de la sauvegarde des données.');
+      res.status(500).json({ success: false, message: 'Une erreur est survenue lors de la sauvegarde des données.' });
     } else {
-      res.status(200).send('Les données ont été sauvegardées avec succès.');
+      res.status(200).json({ success: true, message: 'Les données ont été sauvegardées avec succès.' });
     }
   });
 });
-
 
 app.listen(port, () => {
   console.log(`Le serveur est en écoute sur le port ${port}`);

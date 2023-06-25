@@ -20,7 +20,7 @@
     <!-- DarkMode Button -->
     <div class="dark-mode-toggle">
       <input type="checkbox" id="darkModeToggle" v-model="darkMode" @change="toggleDarkMode()">
-      <label for="darkModeToggle">Mode sombre</label>
+      <label for="darkModeToggle" id="Test">Mode sombre</label>
     </div>
   </nav>
 </template>
@@ -41,6 +41,7 @@ export default {
   methods: {
     toggleDarkMode() {
       if (this.darkMode) {
+        
         document.body.classList.add('dark-mode');
       } else {
         document.body.classList.remove('dark-mode');

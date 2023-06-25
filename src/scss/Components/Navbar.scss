@@ -18,6 +18,7 @@
       color: white;
       text-decoration: none;
       font-weight: 600;
+
       // transition: 0.3s;
       body.dark-mode & {
         color: rgb(0, 0, 0);
@@ -51,6 +52,7 @@
           }
   
           &:hover {
+
             color: rgb(196, 195, 250);
           }
       }

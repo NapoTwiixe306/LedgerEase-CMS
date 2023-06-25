@@ -1,6 +1,6 @@
 <template>
   <footer>
-    <h1 class="logo">Footer</h1>
+    <p class="logo">Copyright by Julien-Milants</p>
 </footer>
 </template>
 
