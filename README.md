@@ -1,29 +1,54 @@
-# ledgerease
+# LedgerEase_CMS
 
-This template should help get you started developing with Vue 3 in Vite.
+ledgerEaser, is a CMS supporting natively basic web3 options.
 
-## Recommended IDE Setup
+## Project Folder
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+find here the project folder for you
 
-## Customize configuration
+```js
+-public
+-Server
+    -Controllers
+        -authControllers.js
+    -Models
+        -User.js
+    -Routes
+        -Auth.js
+    -index.js
+    -.gitignore
+    -package-lock.json
+    -package.json
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
+-Src
+    -components
+        -Blocks ("contains all folders, subfolders, and files for widgets")
+        -img 
+        -Widget
+            -Navbar.vue
+            -index.js
+            -Footer.vue
+        -create.js
+        -CreatePage.vue
+        -DocsPage.vue
+        -HomePage.vue
+        -RegisterPage.vue
+        -YourSitePage.vue
+    -router
+    -scss
+    -App.vue
+    -main.js
+-.gitignore
+-babel.config.js
+-index.js
+-package.lock.json
+-package.json
+-README.md
+-Vite.config.js
 ```
 
-### Compile and Hot-Reload for Development
 
-```sh
-npm run dev
-```
 
-### Compile and Minify for Production
+## License
 
-```sh
-npm run build
-```
+[MIT](https://choosealicense.com/licenses/mit/)
