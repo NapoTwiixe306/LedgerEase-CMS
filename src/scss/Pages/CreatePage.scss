@@ -6,14 +6,13 @@
     flex-direction: column;
     height: 100vh;
     
-  
     .create {
       @include Center();
     //   border: 2px solid red;
       flex-direction: column;
       margin-top: 50px;
       width: 50%;
-  
+
       h1 {
         font-size: 60px;
         font-weight: 500;
@@ -43,7 +42,11 @@
     max-width: 405px;
     border-radius: 10px;
     padding: .75rem;
-
+    background-color: #263249;
+    border: 1px solid #35486b;
+    body.dark-mode & {
+        background-color: #f2f1f5;
+      }
 .card-form {
     padding: 2rem 1rem 0;
 }
@@ -71,11 +74,14 @@
     font: inherit;
     font-size: 1.125rem;
     padding: .25rem 0;
+    body.dark-mode & {
+        border-bottom: 2px solid #aca9a9; 
+    }
     &:focus, &:valid {
         outline: 0;
-        border-bottom-color: #6658d3;
+        border-bottom-color: $PrincipalColors;
         &+.input-label {
-            color: #6658d3;
+            color: $PrincipalColors;
             transform: translateY(-1rem);
         }
         color: white;
@@ -92,7 +98,8 @@
         padding: 1em;
         width: 100%;
         font-weight: 500;
-        background-color: #6658d3;
+        background-color: $PrincipalColors;
+        color: $TxtColor;
         border-radius: 6px;
         border: 0;
         transition: 0.3s;
@@ -116,7 +123,7 @@
         color: #8597a3;
         a {
             display: block;
-            color: #6658d3;
+            color: $PrincipalColors;
             text-decoration: none;
         }
     }
@@ -126,13 +133,14 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-top: 15px;
+        margin-top: 35px;
         a{
             text-decoration: none;
             color: rgb(158, 152, 152);
         }
 
         .forgot_mdp{
+            margin-top: 15px;
             color: rgb(158, 152, 152);
 
         }
