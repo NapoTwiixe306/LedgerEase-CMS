@@ -33,15 +33,18 @@
       <a href=""><font-awesome-icon :icon="['fab', 'github']" class="social"/> Continue With Github</a>
     </div>
   </div>
+  <Footer/>
 </template>
 
 <script>
 import Navbar from './Widget/Navbar.vue';
+import Footer from './Widget/Footer.vue';
 import axios from 'axios'
 import router from '../router/index'
 export default {
   components: {
-    Navbar
+    Navbar,
+    Footer
   },
   data() {
     return {
