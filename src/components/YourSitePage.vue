@@ -1,13 +1,28 @@
 <template>
   <div class="container">
     <div class="content">
-    <select v-model="selectedDevice" @change="changeDevice">
-      <option value="Desktop">Desktop</option>
-      <option value="Tablet">Tablet</option>
-      <option value="Mobile">Mobile</option>
-    </select>
-    <button v-if="isLoggedIn" @click="logout">Logout</button>
-  </div>
+      <select v-model="selectedDevice" @change="changeDevice" class="select">
+        <option value="Desktop">Desktop</option>
+        <option value="Tablet">Tablet</option>
+        <option value="Mobile">Mobile</option>
+      </select>
+      <button v-if="isLoggedIn" @click="logout">Logout</button>
+      <div class="linkBar">
+        <p ref="link" @click="copyLink">link.chausettesDeChocolatJeSaisPasMoi.fr</p>
+        <button @click="copyLink"><font-awesome-icon :icon="['fas', 'clone']"/></button>
+      </div>
+      
+      <div class="Modified">
+        <button class="Modifier-Button">Modifier</button>
+      </div>
+      <div class="viewSite">
+        <button class="viewSite-Button">View Web Site</button>
+      </div>
+      <div class="dark-mode-toggle">
+        <input type="checkbox" id="darkModeToggle" v-model="darkMode" @change="toggleDarkMode()">
+        <label for="darkModeToggle" id="Test">Mode sombre</label>
+      </div>
+    </div>
     <div class="sidebar">
       <div class="logo-wrapper">
         <router-link class="logo" to="/">LedgerEase-CMS</router-link>
@@ -70,6 +85,12 @@
       <div class="dropdown">
         <a href="#" class="dropbtn">Palettes de Couleurs</a>
       </div>
+      <!-- <div class="dropdown">
+        <div class="dark-mode-toggle">
+          <input type="checkbox" id="darkModeToggle" v-model="darkMode" @change="toggleDarkMode()">
+          <label for="darkModeToggle" id="Test" class="dropbtn">Mode sombre</label>
+        </div>
+      </div> -->
       <!-- Répétez la structure ci-dessus pour les autres éléments -->
     </div>
     <div v-if="showSearchBar">
@@ -93,6 +114,7 @@ export default {
       name: null,
       showSearchBar: false,
       selectedDevice: 'Device',
+      darkMode: false,
     };
   },
   mounted() {
@@ -102,6 +124,29 @@ export default {
     }
   },
   methods: {
+    toggleDarkMode() {
+      if (this.darkMode) {
+        
+        document.body.classList.add('dark-mode');
+      } else {
+        document.body.classList.remove('dark-mode');
+      }
+    },
+    copyLink() {
+      const linkText = this.$refs.link.innerText;
+
+      navigator.clipboard.writeText(linkText)
+        .then(() => {
+          this.isCopied = true;
+          setTimeout(() => {
+            this.isCopied = false;
+          }, 2000); // Affiche le message pendant 2 secondes
+        })
+        .catch((error) => {
+          console.error('Erreur lors de la copie du lien :', error);
+          // Vous pouvez également afficher une notification ou un message d'erreur ici
+        });
+    },
     async logout() {
       try {
         await axios.post('http://localhost:3000/auth/logout');

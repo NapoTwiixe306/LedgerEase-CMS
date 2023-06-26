@@ -115,5 +115,93 @@
 
 
 .content {
-  @include DropDown();
+  display: flex;
+  margin: 5px;
+
+  .select {
+    padding: 8px 16px;
+    font-size: 14px;
+    margin: 5px;
+    height: 48px;
+    margin-top: 12px;
+    margin-left: 12px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #333;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  
+  .linkBar {
+    border: 2px solid rgb(221, 219, 219);
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+    margin: 10px;
+    width: 80%;
+    border-radius: 5px;
+    button{
+      display: none;
+    }
+    &:hover{
+      button{
+        display: flex;
+        float: right;
+        margin-top: -25px;
+        border: none;
+        font-size: 25px;
+        filter: invert(1);
+        background-color: transparent;
+        body.dark-mode & {
+          filter: invert(0);
+        } 
+      }
+    }
+  }
+  
+  .Modified {
+    margin: 10px;
+    .Modifier-Button{
+      padding: 8px 16px;
+      font-size: 14px;
+      height: 50px;
+      font-weight: bold;
+      color: #000000;
+      // background-color: #007bff;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+  }
+  
+  .viewSite {
+    margin: 10px;
+    .viewSite-Button {
+      height: 50px;
+      padding: 8px 16px;
+      font-size: 14px;
+      font-weight: bold;
+      color: #000000;
+      // background-color: #28a745;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      white-space: nowrap;
+    }
+  }
+
+  .dark-mode-toggle {
+    input[type="checkbox"] {
+      display: none;
+    }
+  
+    label {
+      position: relative;
+      top: 19px;
+      left: 15px;
+      font-size: 1em;
+      cursor: pointer;
+    }
+  }
 }
