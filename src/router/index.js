@@ -18,11 +18,6 @@ const routes = [
         component: () => import ('../components/CreatePage.vue')
     },
     {
-        path: '/login',
-        name: 'login',
-        component: () => import ('../components/LoginPage.vue')
-    },
-    {
         path: '/register',
         name: 'register',
         component: () => import ('../components/RegisterPage.vue')
