@@ -1,7 +1,8 @@
 body{
-    background-color: #232f45;
+    background-color: #101a2c;
     color: #fff;
     width: 100%;
+    
 }
 /*Base*/
 @import "./Base/Reset.scss";
@@ -24,3 +25,4 @@ body{
 
 /*Widget*/
 @import "../components/Blocks/Navbar/Searchbar/SearchBar.scss"
+

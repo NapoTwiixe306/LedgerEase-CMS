@@ -1,5 +1,5 @@
 <template>
-    <div class="search-bar">
+    <div class="searchBar">
       <input
         type="text"
         placeholder="Rechercher..."

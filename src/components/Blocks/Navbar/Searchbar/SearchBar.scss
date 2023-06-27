@@ -1,34 +1,32 @@
-.search-bar {
+.searchBar {
     display: flex;
-    align-items: center;    
+    align-items: center;
     position: absolute;
     right: 0;
-    width: 310px;
 }
 
-.search-bar input {
+.searchBar input {
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 4px;
     margin-right: 8px;
 }
 
-.search-bar button {
+.searchBar button {
     padding: 8px 16px;
     background-color: #4caf50;
     color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+}
 
+.searchBar button:hover {
+    background-color: #45a049;
 }
 
 .deletebtn{
     position: absolute;
     right: 0;
-    top: 125px;
-}
-
-.search-bar button:hover {
-    background-color: #45a049;
+    top: 115px;
 }

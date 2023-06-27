@@ -85,12 +85,6 @@
       <div class="dropdown">
         <a href="#" class="dropbtn">Palettes de Couleurs</a>
       </div>
-      <!-- <div class="dropdown">
-        <div class="dark-mode-toggle">
-          <input type="checkbox" id="darkModeToggle" v-model="darkMode" @change="toggleDarkMode()">
-          <label for="darkModeToggle" id="Test" class="dropbtn">Mode sombre</label>
-        </div>
-      </div> -->
       <!-- Répétez la structure ci-dessus pour les autres éléments -->
     </div>
   </div>
