@@ -93,11 +93,11 @@
       </div> -->
       <!-- Répétez la structure ci-dessus pour les autres éléments -->
     </div>
-    <div v-if="showSearchBar">
-      <widget-search-bar />
-      <button @click="showSearchBar = false">Supprimer</button>
-    </div>
   </div>
+  <div v-if="showSearchBar">
+      <widget-search-bar />
+      <button @click="showSearchBar = false" class="deletebtn">Supprimer</button>
+    </div>
 </template>
 
 <script>

@@ -1,7 +1,10 @@
 .search-bar {
     display: flex;
-    align-items: center;
-  }
+    align-items: center;    
+    position: absolute;
+    right: 0;
+    width: 310px;
+}
 
 .search-bar input {
     padding: 8px;
@@ -17,6 +20,13 @@
     border: none;
     border-radius: 4px;
     cursor: pointer;
+
+}
+
+.deletebtn{
+    position: absolute;
+    right: 0;
+    top: 125px;
 }
 
 .search-bar button:hover {
