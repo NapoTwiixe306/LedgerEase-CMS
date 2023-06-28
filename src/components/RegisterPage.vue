@@ -1,7 +1,7 @@
 <template>
   <Navbar/>
   <div class="register">
-    <div>
+    <div class="register2">
       <h1 class="title">Let's get started</h1>
       <form @submit.prevent="submitForm">
         <div class="input" >

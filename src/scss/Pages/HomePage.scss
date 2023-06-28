@@ -2,47 +2,47 @@
 @import "../Base/Reset.scss";
 
 .section {
+  @include Center();
+  flex-direction: column;
+  height: 100vh;
+
+
+  .home {
     @include Center();
     flex-direction: column;
-    height: 100vh;
-    
-  
-    .home {
-      @include Center();
-      flex-direction: column;
-      margin-top: 450px;
-      width: 50%;
-  
-      h1 {
-        font-size: 50px;
-        font-weight: 500;
-      }
-  
-      p {
-        margin-top: 25px;
-        font-size: 22px;
-      }
-  
-      .home-btn {
-        text-decoration: none;
-        align-self: flex-start;
-        color: white;
-        margin-right: 15px;
-        margin-top: 15px;
-        padding: 15px 30px;
-        background-color: #445d8b;
-        border-radius: 10px;
-        
-      }
+    margin-top: 450px;
+    width: 50%;
+
+    h1 {
+      font-size: 50px;
+      font-weight: 500;
     }
-  
-    img {
-      margin-top: 50px;
-      width: 65%;
-      border-radius: 15px;
+
+    p {
+      margin-top: 25px;
+      font-size: 22px;
+    }
+
+    .home-btn {
+      text-decoration: none;
+      align-self: flex-start;
+      color: white;
+      margin-right: 15px;
+      margin-top: 15px;
+      padding: 15px 30px;
+      background-color: #445d8b;
+      border-radius: 10px;
+
     }
   }
-  
+
+  img {
+    margin-top: 50px;
+    width: 65%;
+    border-radius: 15px;
+  }
+}
+
 
 .section2 {
   @include Center();
@@ -87,7 +87,7 @@
       grid-gap: 20px;
       margin-top: 50px;
     }
-    
+
     .cardSkillDesign {
       @include Center();
       align-items: flex-start;
@@ -107,13 +107,13 @@
           font-weight: 500;
           margin-left: 20px; /* Décalage du titre vers la gauche */
         }
-      
+
         ul {
           padding: 0;
           list-style: disc;
           margin-top: 30px;
 
-      
+
           li {
             margin: 10px;
             width: 90%;
@@ -122,14 +122,14 @@
           }
         }
      }
-    
+
       .social {
         position: absolute; /* Changement de position absolue pour l'icône */
         top: 10px; /* Positionnement en haut */
         left: 10px; /* Positionnement à gauche */
         font-size: 50px;
       }
-    }    
+    }
   }
 }
   

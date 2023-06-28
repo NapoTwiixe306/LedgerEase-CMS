@@ -99,8 +99,10 @@
       display: block;
       width: 25px;
       height: 3px;
-      background-color: white;
+      background-color: red;
       margin-bottom: 5px;
+      position: relative;
+      left: 55px;
     }
 
     @media (max-width: 480px) {

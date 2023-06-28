@@ -13,13 +13,16 @@
     "@fortawesome/free-regular-svg-icons": "^6.4.0",
     "@fortawesome/free-solid-svg-icons": "^6.4.0",
     "@fortawesome/vue-fontawesome": "^3.0.3",
+    "@itadori/vue-picture-swipe-control": "^1.1.17",
     "axios": "^1.4.0",
     "core-js": "^3.8.3",
     "file-saver": "^2.0.5",
     "fs": "^0.0.1-security",
     "path": "^0.12.7",
+    "slide": "^1.1.6",
     "vite": "^4.3.9",
     "vue": "^3.2.13",
+    "vue-carousel": "^0.18.0",
     "vue-router": "^4.1.6"
   },
   "devDependencies": {
