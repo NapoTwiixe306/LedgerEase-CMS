@@ -8,7 +8,6 @@
       <span></span>
       <span></span>
     </div>
-
     <!-- Nav Link Section -->
     <ul class="header__navigation" :class="{ 'show': isMenuOpen }">
       <li class="header__navigation-item">
