@@ -3,11 +3,12 @@
     <!-- Logo Link -->
     <router-link to="/" class="header__logo">LeagderEase-CMS</router-link>
     <!-- Burger Menu -->
-    <div class="burger-menu" @click="toggleMenu">
+    <div class="burger-menu" :class="{ 'burger-menu-open': isMenuOpen }" @click="toggleMenu">
       <span></span>
       <span></span>
       <span></span>
     </div>
+
     <!-- Nav Link Section -->
     <ul class="header__navigation" :class="{ 'show': isMenuOpen }">
       <li class="header__navigation-item">
@@ -27,7 +28,7 @@
     <div class="search-bar">
       <form method="" action="">
         <input type="text" name="search" placeholder="Rechercher..." v-model="searchQuery">
-        <button type="submit">Search</button>
+        <button type="submit"><font-awesome-icon :icon="['fas', 'search']" class="searchBtn"/></button>
       </form>
     </div>
     <!-- DarkMode Button -->

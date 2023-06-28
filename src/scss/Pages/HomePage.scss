@@ -161,7 +161,7 @@
   }
 
   .card {
-    background-color: #f0f0f0;
+    background-color: #9e9b9b;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.452);
     border-radius: 19px;
     text-align: center;
@@ -176,7 +176,7 @@
     
     h3 {
       font-size: 35px;
-      color: #888;
+      color: $TxtColor;
       margin-bottom: 10px;
       body.dark-mode & {
           color: rgb(0, 0, 0);
@@ -189,7 +189,10 @@
       margin-top: 20px;
       margin-left: auto;
       margin-right: auto;
-      color: #888;
+      color: $TxtColor;
+      body.dark-mode & {
+        color: rgb(0, 0, 0);
+      }
     }
     .price{
         margin-top: 50px;

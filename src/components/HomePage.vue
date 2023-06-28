@@ -2,7 +2,8 @@
   <Navbar/>
     <section class="section">
         <div class="home">
-            <h1>Bienvenue sur LedgerEase, le seul CMS qui propose des fonctionnalités crypto/blockchain, en étant basé sur ces principes.</h1>
+            <h1>Bienvenue sur <span style="color: rgb(150, 125, 16);">LedgerEase</span>, le seul <strong>CMS</strong>
+              qui propose des fonctionnalités crypto/blockchain, en étant basé sur ces principes.</h1>
             <p>43 % des sites Web reposent sur WordPress. WordPress est utilisé par davantage de blogueurs, PME et sociétés du classement Fortune 500
                 que toutes les autres options réunies. Rejoignez les millions de personnes qui utilisent WordPress.com
             </p>
@@ -22,7 +23,7 @@
                         <h2>Web3</h2>
                         <ul>
                             <li>Pris en charge nativement par le cms</li>
-                            <li>Texte 2</li>
+                            <li>un Simple Drag & Drop</li>
                             <li>Texte 3</li>
                         </ul>
                     </div>
