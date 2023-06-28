@@ -1,0 +1,79 @@
+@media only screen and (max-width:480px) {
+  .header{
+    &__logo{
+      margin-left: -50px;
+      font-size: 30px;
+    }
+    .search-bar, .dark-mode-toggle{
+      display: none;
+    }
+    &__navigation{
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 10px;
+      flex-direction: column;
+      align-items: center;
+      transition: all 0.3s ease;
+
+      &.show {
+        display: flex;
+      }
+
+      li {
+        margin: 10px 0;
+      }
+
+      .header__navigation-link {
+        font-size: 20px;
+      }
+    }
+  }
+
+  .section{
+    .home{
+      margin-top: 200px;
+      width: 80%;
+      h1{
+        font-size: 25px;
+      }
+    }
+  }
+
+  .section2{
+    height: 350vh;
+    .home{
+      margin-bottom: -450px;
+      width: 80px;
+        h1{
+          font-size: 25px;
+      }
+      .cardSkill{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+  }
+  .section3{
+    height: 200vh;
+  }
+
+  .section4 {
+    height: 100vh;
+
+    body.dark-mode & {
+      background-color: rgb(241, 241, 241);
+    }
+    .card-container {
+      @include Center();
+      flex-direction: column;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 80px;
+    }
+  }
+}
+

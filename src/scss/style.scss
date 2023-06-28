@@ -21,8 +21,9 @@ body{
 @import "./Pages/RegisterPage.scss";
 @import "./Pages/YourSitePage.scss";
 
-
-
 /*Widget*/
-@import "../components/Blocks/Navbar/Searchbar/SearchBar.scss"
+@import "../components/Blocks/Navbar/Searchbar/SearchBar.scss";
+
+/*Mobile*/
+@import "./Mobile/480px.scss";
 
