@@ -67,15 +67,16 @@
 
 
     <section class="section3">
-        <h1>Section 4</h1>
-        <!-- <div class="home">
-            <h1>Réaliser vos Dapp web3 avec LedgerEase</h1>
-            <p>Quel que soit le site de vous désirer développer,
-                que ce soit du Web3 ou  non, nous vous donnons l'opportunité de faire ce que vous voulez,
-                que ce soit un site sur le Web3, un blog, un landing pages, ...
-            </p>
-            <router-link to="/create" class="home-btn">Commencer</router-link>
-        </div> -->
+         <div class="home">
+           <div class="avatar">
+             <img src="./img/julien.png" alt="">
+           </div>
+           <h1>Qui sommes-nous ? Qui est l'équipe derrière LedgerEase ?</h1>
+           <p>L'équipe est très réduite, car il n'y a qu'une seule personne :
+             <strong>Julien</strong>, le développeur principal.
+             Il a également développé CryptoExtension, le site web et l'extension chrome,
+             (ainsi que tout l'écosysteme de celui-ci.</p>
+        </div>
         <!-- <img src="./img/synthese.jpg" alt=""> -->
     </section>
     <section class="section4">
@@ -108,14 +109,6 @@
                 <a href="" class="btn">Link</a>
             </div>
         </div>
-         <!-- <div class="home">
-            <h1>Réaliser vos Dapp web3 avec LedgerEase</h1>
-            <p>Quel que soit le site de vous désirer développer,
-                que ce soit du Web3 ou  non, nous vous donnons l'opportunité de faire ce que vous voulez,
-                que ce soit un site sur le Web3, un blog, un landing pages, ...
-            </p>
-            <router-link to="/create" class="home-btn">Commencer</router-link>
-        </div> -->
         <!-- <img src="./img/synthese.jpg" alt=""> -->
     </section>
   <Footer/>

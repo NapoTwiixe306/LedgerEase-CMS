@@ -86,11 +86,8 @@
       background-color: rgb(241, 241, 241);
     }
     .card-container {
-     /* @include Center();
-      flex-direction: column;
-      display: grid;
+     @include Center();
       grid-template-columns: repeat(1, 1fr);
-      grid-gap: 80px;*/
       display: none;
     }
   }
