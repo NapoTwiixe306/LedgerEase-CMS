@@ -1,5 +1,5 @@
 @import "../Base/Mixin";
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 480px) {
   .header{
     &__logo{
       margin-left: -85px;

@@ -2,7 +2,7 @@ body{
     background-color: #101a2c;
     color: #fff;
     width: 100%;
-    
+
 }
 /*Base*/
 @import "./Base/Reset.scss";
@@ -26,5 +26,6 @@ body{
 
 /*Mobile*/
 @import "./Mobile/480px.scss";
+@import './Mobile/768px.scss';
 @import "./Mobile/1440px.scss";
 
