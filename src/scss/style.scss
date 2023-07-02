@@ -20,7 +20,7 @@ body{
 @import "./Pages/CreatePage.scss";
 @import "./Pages/RegisterPage.scss";
 @import "./Pages/YourSitePage.scss";
-
+@import './Pages/DocsPage.scss';
 /*Widget*/
 @import "../components/Blocks/Navbar/Searchbar/SearchBar.scss";
 
@@ -28,4 +28,3 @@ body{
 @import "./Mobile/480px.scss";
 @import './Mobile/768px.scss';
 @import "./Mobile/1440px.scss";
-
