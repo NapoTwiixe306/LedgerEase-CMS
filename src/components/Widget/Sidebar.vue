@@ -9,7 +9,7 @@
         <a href="#" @click="showLogo = true">Logo</a>
         <a href="#" @click="showSearchBar = true">Barre de recherche</a>
         <a href="">Lien</a>
-        <a href="">Bouton</a>
+        <a href="#" @click="showButtonPage = true">Bouton</a>
         <a href="">Traduction</a>
       </div>
     </div>
@@ -70,18 +70,29 @@
     <WidgetLogo/>
     <button @click="showLogo = false" class="deletebtn">Supprimer</button>
   </div>
+  <div v-if="showButtonPage">
+    <ButtonPage/>
+    <button @click="showButtonPage = false" class="deletebtn">Supprimer</button>
+  </div>
 </template>
 
 <script>
 import WidgetSearchBar from "@/components/Blocks/Navbar/Searchbar/SearchbarPage.vue";
 import WidgetLogo from "@/components/Blocks/Navbar/Logo/LogoPages.vue";
+import ButtonPage from "@/components/Blocks/Navbar/Button/ButtonPage.vue";
 export default {
   name: 'AppSidebar',
-  components: {WidgetSearchBar, WidgetLogo},
+  components: {
+    ButtonPage,
+    WidgetSearchBar,
+    WidgetLogo,
+  },
   data() {
     return {
       showSearchBar: false,
       showLogo: false,
+      showButtonPage: false,
+
     };
   },
   methods: {
@@ -90,6 +101,9 @@ export default {
     },
     hideLogo(){
       this.showLogo = false;
+    },
+    hideButtonPage(){
+      this.showButtonPage = false;
     }
 
   },

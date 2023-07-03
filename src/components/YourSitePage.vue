@@ -39,6 +39,7 @@ export default {
       name: null,
       showSearchBar: false,
       showLogo: false,
+      showButtonPage: false,
       selectedDevice: 'Device',
       darkMode: false,
     };
@@ -56,6 +57,7 @@ export default {
     },
     hideSearchBar() {this.showSearchBar = false;},
     hideLogo(){this.showLogo = false;},
+    hideButtonPage(){this.showButtonPage = false;},
     changeDevice() {localStorage.setItem('selectedDevice', this.selectedDevice);},
     async logout() {
       try {
