@@ -38,6 +38,7 @@ export default {
       isLoggedIn: localStorage.getItem('token') != null,
       name: null,
       showSearchBar: false,
+      showLogo: false,
       selectedDevice: 'Device',
       darkMode: false,
     };
@@ -54,6 +55,7 @@ export default {
         document.body.classList.remove('dark-mode');
     },
     hideSearchBar() {this.showSearchBar = false;},
+    hideLogo(){this.showLogo = false;},
     changeDevice() {localStorage.setItem('selectedDevice', this.selectedDevice);},
     async logout() {
       try {

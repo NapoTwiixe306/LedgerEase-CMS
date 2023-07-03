@@ -15,7 +15,6 @@
         <div class="input">
           <input class="input-field" id="password" type="password" placeholder="Entrez votre mot de passe ici" v-model="password" required>
           <label class="input-label" for="password">Mot de passe :</label>
-          
         </div>
         <div class="forgot">
           <div>
