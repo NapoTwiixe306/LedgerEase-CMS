@@ -2,7 +2,6 @@ body{
     background-color: #101a2c;
     color: #fff;
     width: 100%;
-
 }
 /*Base*/
 @import "./Base/Reset.scss";
@@ -21,10 +20,25 @@ body{
 @import "./Pages/RegisterPage.scss";
 @import "./Pages/YourSitePage.scss";
 @import './Pages/DocsPage.scss';
-/*Widget*/
+
+/*Widget Navbar*/
 @import "../components/Blocks/Navbar/Searchbar/SearchBar.scss";
 @import "../components/Blocks/Navbar/Logo/Logo.scss";
 @import "../components/Blocks/Navbar/Button/ButtonPage.scss";
+@import "../components/Blocks/Navbar/Translation/TransaltionPage.scss";
+@import "../components/Blocks/Navbar/Link/LinkWidgetPage.scss";
+
+/*Widget Colors Palettes*/
+
+/*Widget DarkMode*/
+
+/*Widget Header*/
+
+/*Widget HerosBanner*/
+
+/*Widget About*/
+
+/*Widget Footer*/
 
 /*Mobile*/
 @import "./Mobile/480px.scss";
