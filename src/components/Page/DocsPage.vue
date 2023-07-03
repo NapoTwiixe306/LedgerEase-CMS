@@ -4,5 +4,5 @@
 </template>
 
 <script setup>
-    import Navbar from './Widget/Navbar.vue';
+    import Navbar from '../Widget/Navbar.vue';
 </script>

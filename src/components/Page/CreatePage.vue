@@ -35,9 +35,9 @@
 </template>
 
 <script lang="js">
-import Navbar from './Widget/Navbar.vue';
-import Footer from './Widget/Footer.vue';
-import router from '../router/index'
+import Navbar from '../Widget/Navbar.vue';
+import Footer from '../Widget/Footer.vue';
+import router from '../../router'
 import axios from 'axios'
 export default {
   components: {

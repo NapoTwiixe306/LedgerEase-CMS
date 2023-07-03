@@ -37,10 +37,10 @@
 </template>
 
 <script>
-import Navbar from './Widget/Navbar.vue';
-import Footer from './Widget/Footer.vue';
+import Navbar from '../Widget/Navbar.vue';
+import Footer from '../Widget/Footer.vue';
 import axios from 'axios'
-import router from '../router/index'
+import router from '../../router'
 export default {
   components: {
     Navbar,

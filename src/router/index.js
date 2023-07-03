@@ -10,22 +10,22 @@ const routes = [
     {
         path: '/docs',
         name: 'docs',
-        component: () => import('../components/DocsPage.vue')
+        component: () => import('../components/Page/DocsPage.vue')
     },
     {
         path: '/create',
         name: 'create',
-        component: () => import ('../components/CreatePage.vue')
+        component: () => import ('../components/Page/CreatePage.vue')
     },
     {
         path: '/register',
         name: 'register',
-        component: () => import ('../components/RegisterPage.vue')
+        component: () => import ('../components/Page/RegisterPage.vue')
     },
     {
         path: '/yoursite',
         name: 'yoursite',
-        component: () => import ('../components/YourSitePage.vue')
+        component: () => import ('../components/Page/YourSitePage.vue')
     }
 
 ]
