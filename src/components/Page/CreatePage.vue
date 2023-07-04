@@ -60,7 +60,7 @@ export default {
 
         localStorage.setItem('token', response.data.token); // stocker le token dans le localstorage
         console.log(response.data, "gg tu es log")
-        router.push('/yoursite');
+        await router.push('/yoursite');
       } catch (error) {
         console.log(error.response.data)
         alert('Nom utilisateur ou mdp incorrect')

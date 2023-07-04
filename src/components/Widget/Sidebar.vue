@@ -47,12 +47,12 @@
       </div>
     </div>
     <div class="dropdown">
-      <a href="#" class="dropbtn">Footer<font-awesome-icon :icon="['fas', 'arrow-right']" class="icon-right" /></a>
+      <a href="#" class="dropbtn">Footer <font-awesome-icon :icon="['fas', 'arrow-right']" class="icon-right" /></a>
       <div class="dropdown-content">
-        <a href="">Logo</a>
-        <a href="">Lien</a>
-        <a href="">Icones</a>
-        <a href="">Bouton</a>
+        <a href="#" @click="showLogo = true">Logo</a>
+        <a href="">Icons</a>
+        <a href="#" @click="showButtonPage = true">Bouton</a>
+        <a href="">Link</a>
       </div>
     </div>
     <div class="dropdown">

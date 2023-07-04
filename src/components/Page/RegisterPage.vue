@@ -62,7 +62,7 @@ export default {
         password: this.password
       });
       console.log(response)
-      router.push({path: '/create'})
+      await router.push({path: '/create'})
     } catch (error) {
       console.log(error.response.data);
       // Afficher un message d'erreur
