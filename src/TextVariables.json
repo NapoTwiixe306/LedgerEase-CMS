@@ -1,5 +1,4 @@
 {
-
   "logo": "LedgerEase-CMS",
   "home_first_section": {
     "title": "Bienvenue sur <span style=\"color: rgb(150, 125, 16);\">LedgerEase</span>, le seul <strong>CMS</strong>\n              qui propose des fonctionnalités crypto/blockchain, en étant basé sur ces principes.",
@@ -15,19 +14,16 @@
       "tird_choice": "Texte 3"
     }
   },
-
   "home_tird_section": {
     "title": "Qui sommes-nous ? Qui est l'équipe derrière LedgerEase ?",
     "description": "L'équipe est très réduite, car il n'y a qu'une seule personne :\n             <strong>Julien</strong>, le développeur principal.\n             Il a également développé CryptoExtension, le site web et l'extension chrome,\n             (ainsi que tout l'écosysteme de celui-ci."
   },
-
   "navigation": {
     "home": "Accueil",
     "create": "Créer",
     "register": "S'inscrire"
   },
-
   "theme": {
     "darkMode": "Mode sombre"
   }
-
+}
