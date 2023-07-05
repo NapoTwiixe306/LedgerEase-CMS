@@ -1,0 +1,11 @@
+{
+  "logo": "LedgerEase-CMS",
+  "navigation": {
+    "home": "Home",
+    "create": "Create",
+    "reigster": "Register"
+  },
+  "theme": {
+    "darkMode": "Mode Sombres"
+  }
+}

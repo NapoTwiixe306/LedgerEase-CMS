@@ -117,7 +117,13 @@
 <script >
   import Navbar from "@/components/Widget/Navbar.vue";
   import Footer from "@/components/Widget/Footer.vue";
+  import translations from '@/TextVariables.json';
   export default{
+    data(){
+      return {
+        translations: translations
+      }
+    },
     components: {
       Navbar,
       Footer,
