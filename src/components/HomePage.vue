@@ -2,29 +2,26 @@
   <Navbar/>
     <section class="section">
         <div class="home">
-            <h1>Bienvenue sur <span style="color: rgb(150, 125, 16);">LedgerEase</span>, le seul <strong>CMS</strong>
-              qui propose des fonctionnalités crypto/blockchain, en étant basé sur ces principes.</h1>
-            <p>43 % des sites Web reposent sur WordPress. WordPress est utilisé par davantage de blogueurs, PME et sociétés du classement Fortune 500
-                que toutes les autres options réunies. Rejoignez les millions de personnes qui utilisent WordPress.com
-            </p>
+            <h1 v-html="translations.home_first_section.title"></h1>
+            <p>{{translations.home_first_section.description}}</p>
             <router-link to="/create" class="home-btn">Commencer</router-link>
         </div>
       <img src="./img/synthese.jpg" alt="">
     </section>
     <section class="section2">
         <div class="home">
-            <h1>Réaliser vos Dapp web3, et autres projet avec LedgerEase</h1>
-            <p>Quel que soit le site que vous désirez développer, que ce soit du Web3 ou non, nous vous donnons l'opportunité de faire ce que vous voulez, que ce soit un site sur le Web3, un blog, une landing page, etc.</p>
+            <h1>{{translations.home_second_section.title}}</h1>
+            <p>{{translations.home_second_section.description}}</p>
             <router-link to="/create" class="home-btn">Commencer</router-link>
             <div class="cardSkill">
                 <div class="cardSkillDesign">
                     <font-awesome-icon :icon="['fas', 'sticky-note']" class="social"/>
                     <div class="text">
-                        <h2>Web3</h2>
+                        <h2>{{translations.home_second_section.first_card.title}}</h2>
                         <ul>
-                            <li>Pris en charge nativement par le cms</li>
-                            <li>un Simple Drag & Drop</li>
-                            <li>Texte 3</li>
+                            <li>{{translations.home_second_section.first_card.first_choice}}</li>
+                            <li>{{translations.home_second_section.first_card.second_choice}}</li>
+                            <li>{{translations.home_second_section.first_card.tird_choice}}</li>
                         </ul>
                     </div>
                 </div>
@@ -71,11 +68,8 @@
            <div class="avatar">
              <img src="./img/julien.png" alt="">
            </div>
-           <h1>Qui sommes-nous ? Qui est l'équipe derrière LedgerEase ?</h1>
-           <p>L'équipe est très réduite, car il n'y a qu'une seule personne :
-             <strong>Julien</strong>, le développeur principal.
-             Il a également développé CryptoExtension, le site web et l'extension chrome,
-             (ainsi que tout l'écosysteme de celui-ci.</p>
+           <h1>{{translations.home_tird_section.title}}</h1>
+           <p v-html="translations.home_tird_section.description"></p>
         </div>
         <!-- <img src="./img/synthese.jpg" alt=""> -->
     </section>

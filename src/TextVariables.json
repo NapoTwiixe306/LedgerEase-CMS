@@ -1,11 +1,33 @@
 {
+
   "logo": "LedgerEase-CMS",
-  "navigation": {
-    "home": "Home",
-    "create": "Create",
-    "reigster": "Register"
+  "home_first_section": {
+    "title": "Bienvenue sur <span style=\"color: rgb(150, 125, 16);\">LedgerEase</span>, le seul <strong>CMS</strong>\n              qui propose des fonctionnalités crypto/blockchain, en étant basé sur ces principes.",
+    "description": "43 % des sites Web reposent sur WordPress. WordPress est utilisé par davantage de blogueurs, PME et sociétés du classement Fortune 500\n                que toutes les autres options réunies. Rejoignez les millions de personnes qui utilisent WordPress.com"
   },
+  "home_second_section": {
+    "title": "Réaliser vos Dapp web3, et autres projet avec LedgerEase",
+    "description": "Quel que soit le site que vous désirez développer, que ce soit du Web3 ou non, nous vous donnons l'opportunité de faire ce que vous voulez, que ce soit un site sur le Web3, un blog, une landing page, etc.",
+    "first_card": {
+      "title": "Web3",
+      "first_choice": "Pris en charge nativement par le cms",
+      "second_choice": "un Simple Drag & Drop",
+      "tird_choice": "Texte 3"
+    }
+  },
+
+  "home_tird_section": {
+    "title": "Qui sommes-nous ? Qui est l'équipe derrière LedgerEase ?",
+    "description": "L'équipe est très réduite, car il n'y a qu'une seule personne :\n             <strong>Julien</strong>, le développeur principal.\n             Il a également développé CryptoExtension, le site web et l'extension chrome,\n             (ainsi que tout l'écosysteme de celui-ci."
+  },
+
+  "navigation": {
+    "home": "Accueil",
+    "create": "Créer",
+    "register": "S'inscrire"
+  },
+
   "theme": {
-    "darkMode": "Mode Sombres"
+    "darkMode": "Mode sombre"
   }
-}
+
