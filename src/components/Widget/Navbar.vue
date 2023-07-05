@@ -16,9 +16,7 @@
       <li class="header__navigation-item">
         <router-link to="/create" class="header__navigation-link">Create</router-link>
       </li>
-      <li class="header__navigation-item">
-        <router-link to="/docs" class="header__navigation-link">Docs</router-link>
-      </li>
+
       <li class="header__navigation-item">
         <router-link to="/register" class="header__navigation-link">Register</router-link>
       </li>

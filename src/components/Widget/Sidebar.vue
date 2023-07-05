@@ -52,7 +52,7 @@
         <a href="#" @click="showLogo = true">Logo</a>
         <a href="">Icons</a>
         <a href="#" @click="showButtonPage = true">Bouton</a>
-        <a href="">Link</a>
+        <a href="#">Link</a>
       </div>
     </div>
     <div class="dropdown">
