@@ -4,23 +4,23 @@
       <router-link class="logo" to="/">{{translations.logo}}</router-link>
     </div>
     <div class="dropdown">
-      <a href="#" class="dropbtn">Navbar <font-awesome-icon :icon="['fas', 'arrow-right']" class="icon-right" /></a>
+      <a href="#" class="dropbtn">{{translations.sidebar.navbar_title}} <font-awesome-icon :icon="['fas', 'arrow-right']" class="icon-right" /></a>
       <div class="dropdown-content">
-        <a href="#" @click="showLogo = true">Logo</a>
-        <a href="#" @click="showSearchBar = true">Barre de recherche</a>
-        <a href="">Lien</a>
-        <a href="#" @click="showButtonPage = true">Bouton</a>
-        <a href="">Traduction</a>
+        <a href="#" @click="showLogo = true">{{translations.sidebar.navbar_item.logo}}</a>
+        <a href="#" @click="showSearchBar = true">{{translations.sidebar.navbar_item.search}}</a>
+        <a href="">{{translations.sidebar.navbar_item.link}}</a>
+        <a href="#" @click="showButtonPage = true">{{translations.sidebar.navbar_item.button}}</a>
+        <a href="">{{translations.sidebar.navbar_item.translate}}</a>
       </div>
     </div>
     <div class="dropdown">
-      <a href="#" class="dropbtn">Heros-Banner <font-awesome-icon :icon="['fas', 'arrow-right']" class="icon-right" /></a>
+      <a href="#" class="dropbtn">{{translations.sidebar.hero_title}}<font-awesome-icon :icon="['fas', 'arrow-right']" class="icon-right" /></a>
       <div class="dropdown-content">
-        <a href="">Image</a>
-        <a href="">Video</a>
-        <a href="">Titre</a>
-        <a href="">Paragraphe</a>
-        <a href="">Icones</a>
+        <a href="">{{translations.sidebar.heros_item.image}}</a>
+        <a href="">{{translations.sidebar.heros_item.video}}</a>
+        <a href="">{{translations.sidebar.heros_item.title}}</a>
+        <a href="">{{translations.sidebar.heros_item.para}}</a>
+        <a href="">{{translations.sidebar.heros_item.icons}}</a>
       </div>
     </div>
     <div class="dropdown">

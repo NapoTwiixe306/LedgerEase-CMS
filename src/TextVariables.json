@@ -31,6 +31,21 @@
   },
 
   "sidebar": {
-
+    "navbar_title": "Navbar",
+    "navbar_item": {
+      "logo": "Logo",
+      "search": "Barre de recherche",
+      "link": "Lien",
+      "button": "Boutton",
+      "translate": "Traduction"
+    },
+    "hero_title": "Heros-Banner",
+    "heros_item": {
+      "image": "Image",
+      "video": "Vidéo",
+      "title": "Titre",
+      "para": "Paragraphe",
+      "icons": "Icones"
+    }
   }
 }
