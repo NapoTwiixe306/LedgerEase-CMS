@@ -10,7 +10,7 @@ export default {
   name: 'AppCopylink',
   data() {
     return {
-      linkText: 'link.chausettesDeChocolatJeSaisPasMoi.fr',
+      linkText: 'link.chausettesDLedgerEase-CMSeChocolatJeSaisPasMoi.fr',
     };
   },
   methods: {

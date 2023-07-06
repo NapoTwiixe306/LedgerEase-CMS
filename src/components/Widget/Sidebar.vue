@@ -1,7 +1,7 @@
 <template>
   <div class="sidebar">
     <div class="logo-wrapper">
-      <router-link class="logo" to="/">LedgerEase-CMS</router-link>
+      <router-link class="logo" to="/">{{translations.logo}}</router-link>
     </div>
     <div class="dropdown">
       <a href="#" class="dropbtn">Navbar <font-awesome-icon :icon="['fas', 'arrow-right']" class="icon-right" /></a>
@@ -80,6 +80,7 @@
 import WidgetSearchBar from "@/components/Blocks/Navbar/Searchbar/SearchbarPage.vue";
 import WidgetLogo from "@/components/Blocks/Navbar/Logo/LogoPages.vue";
 import ButtonPage from "@/components/Blocks/Navbar/Button/ButtonPage.vue";
+import translations from "@/TextVariables.json"
 export default {
   name: 'AppSidebar',
   components: {
@@ -92,6 +93,7 @@ export default {
       showSearchBar: false,
       showLogo: false,
       showButtonPage: false,
+      translations: translations
 
     };
   },

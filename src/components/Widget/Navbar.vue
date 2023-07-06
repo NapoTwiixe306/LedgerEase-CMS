@@ -18,7 +18,7 @@
       </li>
 
       <li class="header__navigation-item">
-        <router-link to="/register" class="header__navigation-link">{{translations.navigation.reigster}}</router-link>
+        <router-link to="/register" class="header__navigation-link">{{translations.navigation.register}}</router-link>
       </li>
     </ul>
     <!-- SearchBar -->
