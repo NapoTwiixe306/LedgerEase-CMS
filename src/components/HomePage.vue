@@ -79,21 +79,21 @@
                 <img src="" alt="">
                 <h3>{{translations.home_four_section.price_card.first_title}}</h3>
                 <p>{{translations.description }}</p>
-                <h3 class="price">free</h3>
+                <h3 class="price">{{translations.home_four_section.real_price.firstPrice}}</h3>
                 <a href="" class="btn">Link</a>
             </div>
             <div class="card">
                 <img src="" alt="">
                 <h3>{{translations.home_four_section.price_card.secnd_title}}</h3>
                 <p>{{translations.description }}</p>
-                <h3 class="price">20$/Month</h3>
+                <h3 class="price">{{translations.home_four_section.real_price.secondPrice}}</h3>
                 <a href="" class="btn">Link</a>
             </div>
             <div class="card">
                 <img src="" alt="">
                 <h3>{{translations.home_four_section.price_card.tird_title}}</h3>
                 <p>{{translations.description }}</p>
-                <h3 class="price">100$/Month</h3>
+                <h3 class="price">{{translations.home_four_section.real_price.tirdPrice}}</h3>
                 <a href="" class="btn">Link</a>
             </div>
         </div>

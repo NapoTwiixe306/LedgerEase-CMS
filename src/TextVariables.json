@@ -42,6 +42,11 @@
       "first_title": "Basic",
       "secnd_title": "Pro",
       "tird_title": "Entreprise"
+    },
+    "real_price": {
+      "firstPrice": "free",
+      "secondPrice": "20$/month",
+      "tirdPrice": "100$/month"
     }
   },
   "navigation": {
