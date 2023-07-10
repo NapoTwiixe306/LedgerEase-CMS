@@ -32,7 +32,7 @@
                         <ul>
                             <li>{{translations.home_second_section.second_card.first_choice}}</li>
                             <li>{{translations.home_second_section.second_card.second_choice}}</li>
-                            <li>{{translations.home_second_section.second_card.tird}}</li>
+                            <li>{{translations.home_second_section.second_card.tird_choice}}</li>
                         </ul>
                     </div>
                 </div>
