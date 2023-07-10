@@ -35,9 +35,13 @@
   },
   "home_tird_section": {
     "title": "Qui sommes-nous ? Qui est l'équipe derrière LedgerEase ?",
-    "description": "L'équipe est très réduite, car il n'y a qu'une seule personne :\n             <strong>Julien</strong>, le développeur principal.\n             Il a également développé CryptoExtension, le site web et l'extension chrome,\n             (ainsi que tout l'écosysteme de celui-ci.",
+    "description": "L'équipe est très réduite, car il n'y a qu'une seule personne :\n             <strong>Julien</strong>, le développeur principal.\n             Il a également développé CryptoExtension, le site web et l'extension chrome,\n             (ainsi que tout l'écosysteme de celui-ci."
+  },
+  "home_four_section": {
     "price_card": {
-      "first_title": "Basic"
+      "first_title": "Basic",
+      "secnd_title": "Pro",
+      "tird_title": "Entreprise"
     }
   },
   "navigation": {

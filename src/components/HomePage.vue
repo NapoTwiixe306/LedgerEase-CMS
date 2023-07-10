@@ -77,21 +77,21 @@
         <div class="card-container">
             <div class="card">
                 <img src="" alt="">
-                <h3>Basic</h3>
+                <h3>{{translations.home_four_section.price_card.first_title}}</h3>
                 <p>{{translations.description }}</p>
                 <h3 class="price">free</h3>
                 <a href="" class="btn">Link</a>
             </div>
             <div class="card">
                 <img src="" alt="">
-                <h3>Pro</h3>
+                <h3>{{translations.home_four_section.price_card.secnd_title}}</h3>
                 <p>{{translations.description }}</p>
                 <h3 class="price">20$/Month</h3>
                 <a href="" class="btn">Link</a>
             </div>
             <div class="card">
                 <img src="" alt="">
-                <h3>Entreprise</h3>
+                <h3>{{translations.home_four_section.price_card.tird_title}}</h3>
                 <p>{{translations.description }}</p>
                 <h3 class="price">100$/Month</h3>
                 <a href="" class="btn">Link</a>
