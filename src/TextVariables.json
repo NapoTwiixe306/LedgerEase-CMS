@@ -1,5 +1,6 @@
 {
   "logo": "LedgerEase-CMS",
+  "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit Repellendus dolores cumque facilis laboriosam incidunt laborum officia reprehenderit fugit aliquam?Quaerat blanditiis recusandae veniam cum ex sequi reprehenderit esse quasi itaque.",
   "home_first_section": {
     "title": "Bienvenue sur <span style=\"color: rgb(150, 125, 16);\">LedgerEase</span>, le seul <strong>CMS</strong>\n              qui propose des fonctionnalités crypto/blockchain, en étant basé sur ces principes.",
     "description": "43 % des sites Web reposent sur WordPress. WordPress est utilisé par davantage de blogueurs, PME et sociétés du classement Fortune 500\n                que toutes les autres options réunies. Rejoignez les millions de personnes qui utilisent WordPress.com"
@@ -12,11 +13,32 @@
       "first_choice": "Pris en charge nativement par le cms",
       "second_choice": "un Simple Drag & Drop",
       "tird_choice": "Texte 3"
+    },
+    "second_card": {
+      "title": "Blogs",
+      "first_choice": "Templates adapter",
+      "second_choice": "Text 2",
+      "tird_choice": "Text 3"
+    },
+    "tird_card": {
+      "title": "NewsLetter",
+      "first_choice": "Une Base de donnée prêtes pour vous",
+      "second_choice": "Text 2",
+      "tird_choice": "Text 3"
+    },
+    "four_card": {
+      "title": "Cours",
+      "first_choice": "Templates Dédié a la mise en page des cours",
+      "second_choice": "Text 2",
+      "tird_choice": "Text 3"
     }
   },
   "home_tird_section": {
     "title": "Qui sommes-nous ? Qui est l'équipe derrière LedgerEase ?",
-    "description": "L'équipe est très réduite, car il n'y a qu'une seule personne :\n             <strong>Julien</strong>, le développeur principal.\n             Il a également développé CryptoExtension, le site web et l'extension chrome,\n             (ainsi que tout l'écosysteme de celui-ci."
+    "description": "L'équipe est très réduite, car il n'y a qu'une seule personne :\n             <strong>Julien</strong>, le développeur principal.\n             Il a également développé CryptoExtension, le site web et l'extension chrome,\n             (ainsi que tout l'écosysteme de celui-ci.",
+    "price_card": {
+      "first_title": "Basic"
+    }
   },
   "navigation": {
     "home": "Home",

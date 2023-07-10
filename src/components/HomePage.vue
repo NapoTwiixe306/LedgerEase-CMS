@@ -28,33 +28,33 @@
                 <div class="cardSkillDesign">
                     <div class="text">
                     <font-awesome-icon :icon="['fas', 'envelope']" class="social"/>
-                        <h2>Blogs</h2>
+                        <h2>{{translations.home_second_section.second_card.title}}</h2>
                         <ul>
-                            <li>Templates adapter</li>
-                            <li>Texte 2</li>
-                            <li>Texte 3</li>
+                            <li>{{translations.home_second_section.second_card.first_choice}}</li>
+                            <li>{{translations.home_second_section.second_card.second_choice}}</li>
+                            <li>{{translations.home_second_section.second_card.tird}}</li>
                         </ul>
                     </div>
                 </div>
                 <div class="cardSkillDesign">
                     <font-awesome-icon :icon="['fab', 'gitlab']" class="social"/>
                     <div class="text">
-                        <h2>NewsLetter</h2>
+                        <h2>{{translations.home_second_section.tird_card.title}}</h2>
                         <ul>
-                            <li>Une Base de donnée prêtes pour vous</li>
-                            <li>Texte 2</li>
-                            <li>Texte 3</li>
+                            <li>{{translations.home_second_section.tird_card.first_choice}}</li>
+                            <li>{{translations.home_second_section.tird_card.second_choice}}</li>
+                            <li>{{translations.home_second_section.tird_card.tird_choice}}</li>
                         </ul>
                     </div>
                 </div>
                 <div class="cardSkillDesign">
                     <font-awesome-icon :icon="['fab', 'github']" class="social"/>
                     <div class="text">
-                        <h2>Cours</h2>
+                        <h2>{{ translations.home_second_section.four_card.title }}</h2>
                         <ul>
-                            <li>Templates Dédié a la mise en page des cours</li>
-                            <li>Texte 2</li>
-                            <li>Texte 3</li>
+                            <li>{{translations.home_second_section.four_card.first_choice}}</li>
+                            <li>{{translations.home_second_section.four_card.second_choice}}</li>
+                            <li>{{translations.home_second_section.four_card.tird_choice}}</li>
                         </ul>
                     </div>
                 </div>
@@ -78,27 +78,21 @@
             <div class="card">
                 <img src="" alt="">
                 <h3>Basic</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Repellendus dolores cumque facilis laboriosam incidunt laborum officia reprehenderit fugit aliquam?
-                    Quaerat blanditiis recusandae veniam cum ex sequi reprehenderit esse quasi itaque.</p>
+                <p>{{translations.description }}</p>
                 <h3 class="price">free</h3>
                 <a href="" class="btn">Link</a>
             </div>
             <div class="card">
                 <img src="" alt="">
                 <h3>Pro</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Repellendus dolores cumque facilis laboriosam incidunt laborum officia reprehenderit fugit aliquam?
-                    Quaerat blanditiis recusandae veniam cum ex sequi reprehenderit esse quasi itaque.</p>
+                <p>{{translations.description }}</p>
                 <h3 class="price">20$/Month</h3>
                 <a href="" class="btn">Link</a>
             </div>
             <div class="card">
                 <img src="" alt="">
                 <h3>Entreprise</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Repellendus dolores cumque facilis laboriosam incidunt laborum officia reprehenderit fugit aliquam?
-                    Quaerat blanditiis recusandae veniam cum ex sequi reprehenderit esse quasi itaque.</p>
+                <p>{{translations.description }}</p>
                 <h3 class="price">100$/Month</h3>
                 <a href="" class="btn">Link</a>
             </div>
