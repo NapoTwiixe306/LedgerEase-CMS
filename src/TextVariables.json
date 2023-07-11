@@ -80,5 +80,20 @@
       "para": "Paragraphe",
       "icons": "Icones"
     }
+  },
+  "register": {
+    "title": "Let's get started",
+    "form": {
+      "userName": "Nom d'utilisateur : ",
+      "Email": "Email :",
+      "MDP": "Mot de passe :"
+    },
+    "ButtonText": "Créer un compte",
+    "AlwaysAccount": "Vous avez déjà un compte ?",
+    "log": "Connectez-vous",
+    "Social": {
+      "Google": "Continue With Google",
+      "Github": "Continue With Github"
+    }
   }
 }
