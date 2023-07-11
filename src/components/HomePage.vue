@@ -4,7 +4,7 @@
         <div class="home">
             <h1 v-html="translations.home_first_section.title"></h1>
             <p>{{translations.home_first_section.description}}</p>
-            <router-link to="/create" class="home-btn">Commencer</router-link>
+            <router-link to="/create" class="home-btn">{{translations.startButton}}</router-link>
         </div>
       <img src="./img/synthese.jpg" alt="">
     </section>
@@ -12,7 +12,7 @@
         <div class="home">
             <h1>{{translations.home_second_section.title}}</h1>
             <p>{{translations.home_second_section.description}}</p>
-            <router-link to="/create" class="home-btn">Commencer</router-link>
+            <router-link to="/create" class="home-btn">{{translations.startButton}}</router-link>
             <div class="cardSkill">
                 <div class="cardSkillDesign">
                     <font-awesome-icon :icon="['fas', 'sticky-note']" class="social"/>
@@ -80,21 +80,21 @@
                 <h3>{{translations.home_four_section.price_card.first_title}}</h3>
                 <p>{{translations.description }}</p>
                 <h3 class="price">{{translations.home_four_section.real_price.firstPrice}}</h3>
-                <a href="" class="btn">Link</a>
+                <a href="" class="btn">{{translations.Link}}</a>
             </div>
             <div class="card">
                 <img src="" alt="">
                 <h3>{{translations.home_four_section.price_card.secnd_title}}</h3>
                 <p>{{translations.description }}</p>
                 <h3 class="price">{{translations.home_four_section.real_price.secondPrice}}</h3>
-                <a href="" class="btn">Link</a>
+                <a href="" class="btn">{{translations.Link}}</a>
             </div>
             <div class="card">
                 <img src="" alt="">
                 <h3>{{translations.home_four_section.price_card.tird_title}}</h3>
                 <p>{{translations.description }}</p>
                 <h3 class="price">{{translations.home_four_section.real_price.tirdPrice}}</h3>
-                <a href="" class="btn">Link</a>
+                <a href="" class="btn">{{translations.Link}}</a>
             </div>
         </div>
         <!-- <img src="./img/synthese.jpg" alt=""> -->

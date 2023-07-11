@@ -5,6 +5,8 @@
     "title": "Bienvenue sur <span style=\"color: rgb(150, 125, 16);\">LedgerEase</span>, le seul <strong>CMS</strong>\n              qui propose des fonctionnalités crypto/blockchain, en étant basé sur ces principes.",
     "description": "43 % des sites Web reposent sur WordPress. WordPress est utilisé par davantage de blogueurs, PME et sociétés du classement Fortune 500\n                que toutes les autres options réunies. Rejoignez les millions de personnes qui utilisent WordPress.com"
   },
+  "startButton": "Commencez",
+  "Link": "Link",
   "home_second_section": {
     "title": "Réaliser vos Dapp web3, et autres projet avec LedgerEase",
     "description": "Quel que soit le site que vous désirez développer, que ce soit du Web3 ou non, nous vous donnons l'opportunité de faire ce que vous voulez, que ce soit un site sur le Web3, un blog, une landing page, etc.",
