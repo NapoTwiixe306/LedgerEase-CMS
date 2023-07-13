@@ -72,14 +72,33 @@
       "button": "Boutton",
       "translate": "Traduction"
     },
-    "hero_title": "Heros-Banner",
-    "heros_item": {
-      "image": "Image",
-      "video": "Vidéo",
+    "header_title": "Header",
+    "header_item": {
+      "sectionNumber": "Nombre de Section",
+      "sectionSize": "Taille de section",
       "title": "Titre",
       "para": "Paragraphe",
-      "icons": "Icones"
-    }
+      "icons": "Icones",
+      "img": "Images",
+      "video": "Vidéo",
+      "card": "CardDesign"
+    },
+    "about_title": "À Propos",
+    "about_item": {
+      "title": "Titre",
+      "para": "Paragraphe",
+      "icons": "Icones",
+      "link": "Lien",
+      "button": "Boutton"
+    },
+    "footer_title": "Footer",
+    "footer_item": {
+      "logo": "Logo",
+      "icons": "Icones",
+      "link": "Lien",
+      "button": "Boutton"
+    },
+    "colors_title": "Colors Panel"
   },
   "register": {
     "title": "Let's get started",
