@@ -5,7 +5,9 @@
       @mousedown="startDrag"
 
   >
-    <h1>YOP MON REUF BIEN OU BIEN ??</h1>
+    <div class="panel">
+
+    </div>
   </div>
 </template>
 
