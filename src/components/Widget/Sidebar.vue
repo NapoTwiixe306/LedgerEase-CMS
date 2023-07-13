@@ -10,7 +10,7 @@
         <a href="#" @click="showSearchBar = true">{{translations.sidebar.navbar_item.search}}</a>
         <a href="">{{translations.sidebar.navbar_item.link}}</a>
         <a href="#" @click="showButtonPage = true">{{translations.sidebar.navbar_item.button}}</a>
-        <a href="">{{translations.sidebar.navbar_item.translate}}</a>
+        <a href="#" @click="showTranslatePage = true">{{translations.sidebar.navbar_item.translate}}</a>
       </div>
     </div>
     <div class="dropdown">
@@ -74,6 +74,10 @@
     <ButtonPage/>
     <button @click="showButtonPage = false" class="deletebtn">Supprimer</button>
   </div>
+  <div v-if="showTranslatePage">
+    <TranslationPage/>
+    <button @click="showTranslatePage = false" class="deletebtn">Supprimer</button>
+  </div>
 </template>
 
 <script>
@@ -81,9 +85,11 @@ import WidgetSearchBar from "@/components/Blocks/Navbar/Searchbar/SearchbarPage.
 import WidgetLogo from "@/components/Blocks/Navbar/Logo/LogoPages.vue";
 import ButtonPage from "@/components/Blocks/Navbar/Button/ButtonPage.vue";
 import translations from "@/TextVariables.json"
+import TranslationPage from "@/components/Blocks/Navbar/Translation/TranslationPage.vue";
 export default {
   name: 'AppSidebar',
   components: {
+    TranslationPage,
     ButtonPage,
     WidgetSearchBar,
     WidgetLogo,
@@ -93,6 +99,7 @@ export default {
       showSearchBar: false,
       showLogo: false,
       showButtonPage: false,
+      showTranslatePage: false,
       translations: translations
 
     };
@@ -106,6 +113,9 @@ export default {
     },
     hideButtonPage(){
       this.showButtonPage = false;
+    },
+    hideTranslatePage(){
+      this.showTranslatePage = false;
     }
 
   },
