@@ -59,7 +59,7 @@
       <a href="#" class="dropbtn">DarkMode</a>
     </div>
     <div class="dropdown">
-      <a href="#" class="dropbtn">Palettes de Couleurs</a>
+      <a href="#" @click="showPalettes = true" class="dropbtn">Palettes de Couleurs</a>
     </div>
   </div>
   <div v-if="showSearchBar">
@@ -78,6 +78,10 @@
     <TranslationPage/>
     <button @click="showTranslatePage = false" class="deletebtn">Supprimer</button>
   </div>
+  <div v-if="showPalettes">
+    <ColorsPalettesPage/>
+    <button @click="showPalettes = false" class="deletebtn">Supprimer</button>
+  </div>
 </template>
 
 <script>
@@ -86,9 +90,11 @@ import WidgetLogo from "@/components/Blocks/Navbar/Logo/LogoPages.vue";
 import ButtonPage from "@/components/Blocks/Navbar/Button/ButtonPage.vue";
 import translations from "@/TextVariables.json"
 import TranslationPage from "@/components/Blocks/Navbar/Translation/TranslationPage.vue";
+import ColorsPalettesPage from "@/components/Blocks/ColorsPalettes/ColorsPalettesPage.vue";
 export default {
   name: 'AppSidebar',
   components: {
+    ColorsPalettesPage,
     TranslationPage,
     ButtonPage,
     WidgetSearchBar,
@@ -100,6 +106,7 @@ export default {
       showLogo: false,
       showButtonPage: false,
       showTranslatePage: false,
+      showPalettes: false,
       translations: translations
 
     };
@@ -116,6 +123,9 @@ export default {
     },
     hideTranslatePage(){
       this.showTranslatePage = false;
+    },
+    hidePalettes(){
+      this.showPalettes = false;
     }
 
   },
