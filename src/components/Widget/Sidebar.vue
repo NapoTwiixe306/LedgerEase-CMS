@@ -78,7 +78,7 @@ export default {
           ],
         },
         {
-          title: 'Footer',
+          title: translations.sidebar.footer_title,
           links: [
             { title: translations.sidebar.footer_item.logo, component: 'Logo' },
             { title: translations.sidebar.footer_item.icons},
