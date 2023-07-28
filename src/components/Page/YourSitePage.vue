@@ -2,9 +2,9 @@
   <div class="container">
     <div class="content">
       <select v-model="selectedDevice" @change="changeDevice" class="select">
-        <option value="Desktop">Desktop</option>
-        <option value="Tablet">Tablet</option>
-        <option value="Mobile">Mobile</option>
+        <option value="Desktop">{{ translations.devices.components.desk }}</option>
+        <option value="Tablet">{{ translations.devices.components.tablet }}</option>
+        <option value="Mobile">{{ translations.devices.components.Mobile }}</option>
       </select>
       <button v-if="isLoggedIn" @click="logout">Logout</button>
       <AppCopylink/>
@@ -27,6 +27,8 @@
 import axios from 'axios';
 import Sidebar from "@/components/Widget/Sidebar.vue";
 import AppCopylink from "@/components/Widget/CopyLink.vue";
+import translations from '@/TextVariables.json';
+
 
 export default {
   components: {
@@ -42,6 +44,8 @@ export default {
       showButtonPage: false,
       selectedDevice: 'Device',
       darkMode: false,
+      translations: translations
+
     };
   },
   mounted() {
