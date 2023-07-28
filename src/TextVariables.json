@@ -114,5 +114,12 @@
       "Google": "Continue With Google",
       "Github": "Continue With Github"
     }
+  },
+  "devices": {
+    "components": {
+      "desk": "Desktop",
+      "tablet": "Tablet",
+      "Mobile": "Mobile"
+    }
   }
 }
