@@ -20,12 +20,10 @@ export default {
       navigator.clipboard
           .writeText(linkText)
           .then(() => {
-            // Copie réussie
-            // Ajoutez ici les actions supplémentaires que vous souhaitez effectuer
+            console.log("le text a bien été copier");
           })
           .catch((error) => {
             console.error('Erreur lors de la copie du lien :', error);
-            // Gérez l'erreur ici
           });
     },
   },
