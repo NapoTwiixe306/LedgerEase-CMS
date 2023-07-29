@@ -70,7 +70,7 @@ export default {
         this.isLoggedIn = false;
         this.$router.push('/');
       } catch (error) {
-        console.log(error);
+        console.log("Une erreur c'est produite",error);
       }
     },
   },
