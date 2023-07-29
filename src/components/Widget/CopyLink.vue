@@ -20,7 +20,7 @@ export default {
       navigator.clipboard
           .writeText(linkText)
           .then(() => {
-            console.log("le text a bien été copier");
+            console.log("le text a bien été copier", linkText);
           })
           .catch((error) => {
             console.error('Erreur lors de la copie du lien :', error);
