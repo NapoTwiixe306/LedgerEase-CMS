@@ -68,7 +68,7 @@ export default {
       await router.push({path: '/create'})
     } catch (error) {
       console.log(error.response.data);
-      // Afficher un message d'erreur
+      console.log("une erreur c'est produite", error.response.data);
     }
   }
 }
